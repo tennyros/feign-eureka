@@ -12,6 +12,9 @@ spring:
     loadbalancer:
       cache:
         enabled: true
+    openfeign:
+      circuitbreaker:
+        enabled: true
 
 eureka:
   client:
