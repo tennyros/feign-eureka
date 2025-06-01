@@ -1,10 +1,10 @@
-package com.github.tennyros.feigneureka;
+package com.github.tennyros.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FeignEurekaApplicationTests {
+class EurekaServerApplicationTests {
 
 	@Test
 	void contextLoads() {
