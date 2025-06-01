@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: user-service
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=500,expireAfterAccess=5m
+  cloud:
+    loadbalancer:
+      cache:
+        enabled: true
 
 eureka:
   client:

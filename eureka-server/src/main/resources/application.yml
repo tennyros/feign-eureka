@@ -5,3 +5,13 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+spring:
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=500,expireAfterAccess=5m
+  cloud:
+    loadbalancer:
+      cache:
+        enabled: true
